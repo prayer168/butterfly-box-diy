@@ -26,7 +26,7 @@
 
 測試網址：`https://prayer168.github.io/butterfly-box-diy/`
 
-- GitHub Actions `Deploy GitHub Pages`：成功，最新 run `31951905210`。
+- GitHub Actions `Deploy GitHub Pages`：首頁改版 run `31951905210` 成功；測試紀錄同步 run `31952019239` 成功。
 - 首頁、CSS、JavaScript 與第 1、20 張投影片圖片：HTTP 200。
 - 公開首頁：20 張投影片與直接播放元件成功載入，未包含 iframe。
 - 公開播放模式：成功開啟，顯示 `01 / 20` 與本機圖片路徑。
