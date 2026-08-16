@@ -37,3 +37,26 @@ tasks.forEach((task) => {
   });
 });
 updateProgress();
+
+const presentationStage = document.querySelector("#presentation-stage");
+const fullscreenButton = document.querySelector("#presentation-fullscreen");
+
+function updateFullscreenState() {
+  const isFullscreen = document.fullscreenElement === presentationStage;
+  if (!fullscreenButton) return;
+  fullscreenButton.setAttribute("aria-pressed", String(isFullscreen));
+  fullscreenButton.innerHTML = isFullscreen ? "退出全螢幕 <span aria-hidden=\"true\">×</span>" : "全螢幕播放 <span aria-hidden=\"true\">⛶</span>";
+}
+
+fullscreenButton?.addEventListener("click", async () => {
+  if (!presentationStage) return;
+  try {
+    if (document.fullscreenElement) await document.exitFullscreen();
+    else await presentationStage.requestFullscreen();
+  } catch {
+    // Some embedded browsers block fullscreen; the in-page presentation remains usable.
+  }
+  updateFullscreenState();
+});
+
+document.addEventListener("fullscreenchange", updateFullscreenState);
