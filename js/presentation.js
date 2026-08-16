@@ -41,7 +41,7 @@ function renderDeck() {
   deck.innerHTML = slideData.map((slide, index) => `
     <figure class="presentation-slide" id="presentation-slide-${index + 1}">
       <button class="presentation-slide-trigger" type="button" data-slide-index="${index}" aria-label="開啟第 ${index + 1} 張投影片：${slide.title}">
-        <img src="${imagePath(index)}" alt="第 ${index + 1} 張投影片：${slide.title}。${slide.caption}" width="800" height="450" loading="${index < 2 ? "eager" : "lazy"}">
+        <img src="${imagePath(index)}" alt="第 ${index + 1} 張投影片：${slide.title}。${slide.caption}" width="1600" height="900" loading="${index < 2 ? "eager" : "lazy"}">
       </button>
       <figcaption><span>${String(index + 1).padStart(2, "0")}</span><div><strong>${slide.title}</strong><small>${slide.caption}</small></div></figcaption>
     </figure>

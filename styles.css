@@ -33,11 +33,11 @@ a { color: inherit; }
 .presentation-actions .button { border: 0; cursor: pointer; font: inherit; }
 .presentation-stage { position: relative; width: 100%; }
 .presentation-deck { display: grid; gap: 0; margin: 48px calc(50% - 50vw) 0; scroll-snap-type: y proximity; }
-.presentation-slide { display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 20px; align-items: center; min-height: calc(100svh - 74px); margin: 0; padding: clamp(28px, 5vw, 72px) max(24px, calc((100vw - 1180px) / 2)); overflow: hidden; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #efe9dd; scroll-snap-align: start; }
+.presentation-slide { display: grid; grid-template-rows: auto auto; gap: 20px; align-items: center; min-height: calc(100svh - 74px); margin: 0; padding: clamp(28px, 5vw, 72px) max(24px, calc((100vw - 1180px) / 2)); overflow: visible; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #efe9dd; scroll-snap-align: start; }
 .presentation-slide:nth-child(even) { background: #e7e2d6; }
 .presentation-slide-trigger { display: block; width: min(100%, 1180px); margin: 0 auto; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
 .presentation-slide-trigger:focus-visible { outline-offset: 8px; }
-.presentation-slide img { display: block; width: 100%; max-height: calc(100svh - 170px); margin: 0 auto; aspect-ratio: 16 / 9; object-fit: contain; border: 1px solid var(--line); background: #fbfaf6; box-shadow: 0 18px 40px rgba(44, 48, 35, .14); }
+.presentation-slide img { display: block; width: auto; height: min(calc(100svh - 170px), calc((100vw - 48px) * 9 / 16)); max-width: 100%; margin: 0 auto; aspect-ratio: 16 / 9; object-fit: contain; border: 1px solid var(--line); background: #fbfaf6; box-shadow: 0 18px 40px rgba(44, 48, 35, .14); }
 .presentation-slide figcaption { display: flex; gap: 12px; align-items: baseline; width: min(100%, 1180px); margin: 0 auto; color: var(--green-dark); }
 .presentation-slide figcaption > span { color: var(--orange); font-family: Georgia, serif; font-size: 1.05rem; font-weight: 800; }
 .presentation-slide figcaption strong, .presentation-slide figcaption small { display: block; }.presentation-slide figcaption strong { font-size: 1rem; }.presentation-slide figcaption small { margin-top: 3px; color: var(--muted); font-size: .78rem; line-height: 1.6; }

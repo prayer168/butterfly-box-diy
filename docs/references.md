@@ -4,7 +4,7 @@
 
 - 名稱：蝴蝶飼養觀察箱DIY_親子手作營_陳賢宗.pptx
 - 來源：[Google Drive 原始檔案](https://drive.google.com/file/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/view)
-- 使用方式：依使用者要求，將原始 PPTX 的 20 張投影片轉為 repository 內的本地 PNG，供網頁逐頁閱讀與播放。
+- 使用方式：依使用者要求，將原始 PPTX 的 20 張投影片以 Microsoft PowerPoint 輸出為 1600 × 900 PNG，保存於 repository 內供網頁逐頁閱讀與播放；重新輸出用來修正截圖拼接造成的文字裁切與重複。
 - 查核日期：2026-08-16
 
 ## 視覺參考
