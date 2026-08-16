@@ -7,6 +7,7 @@
 - 新增本機觀察進度保存、鍵盤焦點、降低動畫偏好與列印樣式。
 - 補上 Open Graph、Twitter Card、主題色與更完整的 README。
 - 參考「野外求生」手冊風格調整首頁導覽與色彩。
+- 首頁改為滿版戶外觀察照片、深綠左側漸層與手冊式大標題，加入 `BUTTERFLY OBSERVATION FIELD GUIDE・TAIWAN` 導引文字。
 - 將 Google Drive iframe 改為 20 張本地投影片，新增逐頁閱讀、播放模式、翻頁與自動播放控制。
 
 ## 2026-08-16
