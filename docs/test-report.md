@@ -4,7 +4,7 @@
 
 ## 靜態檢查
 
-- `git diff --check`：待提交前執行。
+- `git diff --check`：通過。
 - 投影片圖片：20 張，皆為 800 × 450 PNG；首頁不再包含簡報 iframe。
 - 內容資料：20 個投影片標題與說明已寫入 `js/presentation.js`。
 
@@ -20,6 +20,12 @@
 - 主控台：無 error 或 warning。
 - 水平溢出：`scrollWidth` 未超過 viewport。
 
-## 尚待公開版複測
+## 公開版複測
 
-- GitHub Pages 部署完成後，需以公開網址重新檢查首頁、CSS、JavaScript 與 20 張投影片圖片。
+測試網址：`https://prayer168.github.io/butterfly-box-diy/`
+
+- GitHub Actions `Deploy GitHub Pages`：成功，run `31950352488`。
+- 首頁、CSS、JavaScript 與第 1、20 張投影片圖片：HTTP 200。
+- 公開首頁：20 張投影片與直接播放元件成功載入，未包含 iframe。
+- 公開播放模式：成功開啟，顯示 `01 / 20` 與本機圖片路徑。
+- 公開翻頁與關閉：成功由 `01 / 20` 切換至 `02 / 20`，再關閉播放模式。
