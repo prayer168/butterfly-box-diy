@@ -42,21 +42,46 @@ const presentationStage = document.querySelector("#presentation-stage");
 const fullscreenButton = document.querySelector("#presentation-fullscreen");
 
 function updateFullscreenState() {
-  const isFullscreen = document.fullscreenElement === presentationStage;
+  const isFullscreen = document.fullscreenElement === presentationStage || presentationStage?.classList.contains("is-expanded");
   if (!fullscreenButton) return;
   fullscreenButton.setAttribute("aria-pressed", String(isFullscreen));
   fullscreenButton.innerHTML = isFullscreen ? "退出全螢幕 <span aria-hidden=\"true\">×</span>" : "全螢幕播放 <span aria-hidden=\"true\">⛶</span>";
 }
 
+function setPresentationExpanded(expanded) {
+  presentationStage?.classList.toggle("is-expanded", expanded);
+  document.body.classList.toggle("presentation-expanded", expanded);
+  updateFullscreenState();
+}
+
 fullscreenButton?.addEventListener("click", async () => {
   if (!presentationStage) return;
+  const wasNativeFullscreen = Boolean(document.fullscreenElement);
   try {
-    if (document.fullscreenElement) await document.exitFullscreen();
-    else await presentationStage.requestFullscreen();
+    if (wasNativeFullscreen) {
+      await document.exitFullscreen();
+    } else if (presentationStage.classList.contains("is-expanded")) {
+      setPresentationExpanded(false);
+      return;
+    } else if (presentationStage.requestFullscreen) {
+      await presentationStage.requestFullscreen();
+    } else {
+      setPresentationExpanded(true);
+      return;
+    }
   } catch {
-    // Some embedded browsers block fullscreen; the in-page presentation remains usable.
+    setPresentationExpanded(true);
+    return;
   }
+  if (wasNativeFullscreen) {
+    updateFullscreenState();
+    return;
+  }
+  if (!document.fullscreenElement && !presentationStage.classList.contains("is-expanded")) setPresentationExpanded(true);
   updateFullscreenState();
 });
 
 document.addEventListener("fullscreenchange", updateFullscreenState);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && presentationStage?.classList.contains("is-expanded")) setPresentationExpanded(false);
+});
