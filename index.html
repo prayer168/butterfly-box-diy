@@ -3,45 +3,118 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="蝴蝶飼養觀察箱 DIY 親子手作營網頁簡報">
-  <title>蝴蝶飼養觀察箱 DIY</title>
+  <meta name="theme-color" content="#f7f4ec">
+  <meta name="description" content="蝴蝶飼養觀察箱 DIY：親子手作、校園生物多樣性與生命教育活動導覽。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="蝴蝶飼養觀察箱 DIY｜親子手作營">
+  <meta property="og:description" content="從組裝觀察箱到記錄羽化，陪孩子用安全、尊重生命的方式觀察蝴蝶。">
+  <meta property="og:url" content="https://prayer168.github.io/butterfly-box-diy/">
+  <meta property="og:site_name" content="蝴蝶飼養觀察箱 DIY">
+  <meta property="og:locale" content="zh_TW">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>蝴蝶飼養觀察箱 DIY｜親子手作營</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#slides" aria-label="回到簡報">
+    <a class="brand" href="#top" aria-label="回到蝴蝶飼養觀察箱 DIY 首頁">
       <span class="brand-mark" aria-hidden="true">DIY</span>
       <span>
         <strong>蝴蝶飼養觀察箱 DIY</strong>
-        <small>親子手作營</small>
+        <small>親子手作營・生命教育</small>
       </span>
     </a>
+    <nav class="site-nav" aria-label="頁面導覽">
+      <a href="#guide">活動導覽</a>
+      <a href="#slides">簡報預覽</a>
+      <a href="#observe">觀察任務</a>
+    </nav>
     <nav class="downloads" aria-label="下載檔案">
-      <a class="download-link" href="https://drive.google.com/uc?export=download&id=1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j">
-        下載簡報
-      </a>
-      <a class="download-link" href="https://docs.google.com/presentation/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/export/pdf">
-        下載 PDF
-      </a>
+      <a class="download-link" href="https://drive.google.com/uc?export=download&amp;id=1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j" target="_blank" rel="noopener noreferrer">下載簡報</a>
+      <a class="download-link download-link-secondary" href="https://docs.google.com/presentation/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/export/pdf" target="_blank" rel="noopener noreferrer">下載 PDF</a>
     </nav>
   </header>
 
-  <main id="slides" class="presentation-shell">
-    <section class="viewer-panel" aria-label="網頁簡報">
-      <iframe
-        title="蝴蝶飼養觀察箱 DIY 簡報預覽"
-        src="https://drive.google.com/file/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/preview"
-        allow="autoplay; fullscreen"
-        allowfullscreen>
-      </iframe>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">校園生物多樣性 × 親子手作 × 生命教育</p>
+        <h1 id="hero-title">把一段小小的<br><em>蛻變旅程</em>帶回家</h1>
+        <p class="hero-lede">一起做一個通風、好觀察的蝴蝶飼養觀察箱，從認識寄主植物開始，練習等待、記錄，也學會在合適的時候把蝴蝶送回大自然。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#guide">開始活動導覽 <span aria-hidden="true">↓</span></a>
+          <a class="button button-quiet" href="#slides">直接看簡報 <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="hero-note"><span class="note-dot" aria-hidden="true"></span>適合親子共學、自然課延伸與校園生態活動</p>
+      </div>
+      <div class="hero-art" aria-label="一隻停在葉片上的蝴蝶插圖" role="img">
+        <svg viewBox="0 0 500 430" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="wing-left" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffca78"/><stop offset="1" stop-color="#ed7d55"/></linearGradient>
+            <linearGradient id="wing-right" x1="1" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f8b86d"/><stop offset="1" stop-color="#d96052"/></linearGradient>
+            <filter id="soft-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#7b5d3e" flood-opacity=".18"/></filter>
+          </defs>
+          <path class="art-leaf" d="M64 344c119-8 237 9 369-65-35 84-134 130-253 92-46-14-83-18-116-15Z"/>
+          <path class="art-stem" d="M46 367c114-55 219-76 382-103"/>
+          <path class="art-vein" d="M114 342c52-17 113-32 183-44M174 354c-7-27-3-54 9-78M228 346c8-25 28-50 56-71M289 333c25-18 53-31 84-38"/>
+          <g class="art-butterfly" filter="url(#soft-shadow)">
+            <path class="wing wing-left" d="M253 199c-52-96-139-135-177-93-39 43 10 124 114 153 21 6 44-16 63-60Z"/>
+            <path class="wing wing-right" d="M270 199c52-96 139-135 177-93 39 43-10 124-114 153-21 6-44-16-63-60Z"/>
+            <path class="wing lower-left" d="M251 215c-41 14-92 69-68 105 23 34 70 5 88-57 5-18-2-36-20-48Z"/>
+            <path class="wing lower-right" d="M272 215c41 14 92 69 68 105-23 34-70 5-88-57-5-18 2-36 20-48Z"/>
+            <path class="wing-mark mark-left" d="M114 132c27-17 68 1 98 40M128 177c21 16 40 25 64 31M385 132c-27-17-68 1-98 40M371 177c-21 16-40 25-64 31"/>
+            <circle class="wing-eye eye-left" cx="137" cy="122" r="13"/><circle class="wing-eye eye-right" cx="363" cy="122" r="13"/>
+            <path class="body" d="M262 137c-17 30-20 77-5 111 10 17 22 16 31 0 15-34 12-81-5-111-7-12-14-12-21 0Z"/><circle class="head" cx="270" cy="130" r="16"/>
+            <path class="antenna" d="M260 119c-20-25-35-29-47-19M280 119c20-25 35-29 47-19"/><circle class="antenna-tip" cx="212" cy="100" r="4"/><circle class="antenna-tip" cx="328" cy="100" r="4"/>
+          </g>
+          <circle class="art-spark spark-one" cx="100" cy="80" r="5"/><circle class="art-spark spark-two" cx="414" cy="210" r="7"/><circle class="art-spark spark-three" cx="385" cy="52" r="4"/>
+        </svg>
+      </div>
     </section>
 
-    <section class="fallback">
-      <p>若簡報沒有顯示，請先確認 Google Drive 檔案權限，或開啟原始簡報連結。</p>
-      <a href="https://docs.google.com/presentation/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/edit?usp=drivesdk&ouid=105063083445636359262&rtpof=true&sd=true">
-        開啟原始簡報
-      </a>
+    <section id="guide" class="section section-guide" aria-labelledby="guide-title">
+      <div class="section-heading">
+        <p class="eyebrow">活動導覽</p>
+        <h2 id="guide-title">四個步驟，讀懂一段蛻變</h2>
+        <p>先看懂整個流程，再打開簡報動手做。每一步都留下孩子的觀察問題，讓手作不只是完成作品。</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card step-card-one"><span class="step-number">01</span><div class="step-icon" aria-hidden="true">⌕</div><h3>認識對象</h3><p>觀察幼蟲、蛹與成蝶的外形變化，先知道自己正在照顧誰。</p><span class="step-tag">觀察</span></article>
+        <article class="step-card step-card-two"><span class="step-number">02</span><div class="step-icon" aria-hidden="true">▱</div><h3>組裝箱體</h3><p>保留通風與採光，讓孩子理解「安全的家」需要合適的環境。</p><span class="step-tag">手作</span></article>
+        <article class="step-card step-card-three"><span class="step-number">03</span><div class="step-icon" aria-hidden="true">✎</div><h3>每日記錄</h3><p>記下日期、外形、食量與行為，把等待變成可以回看的證據。</p><span class="step-tag">記錄</span></article>
+        <article class="step-card step-card-four"><span class="step-number">04</span><div class="step-icon" aria-hidden="true">↗</div><h3>尊重生命</h3><p>羽化後給蝴蝶時間展翅，依合適時機放回戶外，不把牠當成收藏品。</p><span class="step-tag">放飛</span></article>
+      </div>
     </section>
+
+    <section class="section care-section" aria-labelledby="care-title">
+      <div class="care-intro"><p class="eyebrow">照護提醒</p><h2 id="care-title">讓觀察箱成為<br><em>舒適的臨時住所</em></h2><p>照顧的重點不是把蝴蝶留得越久越好，而是提供短暫、安全、接近自然的環境。</p></div>
+      <div class="care-list">
+        <article class="care-item"><span class="care-icon" aria-hidden="true">◌</span><div><h3>通風、陰涼</h3><p>避免密閉與西曬，箱體放在明亮但不會過熱的位置。</p></div></article>
+        <article class="care-item"><span class="care-icon" aria-hidden="true">♧</span><div><h3>提供寄主植物</h3><p>依蝴蝶種類準備牠能取食的植物，不隨意餵食人類食物。</p></div></article>
+        <article class="care-item"><span class="care-icon" aria-hidden="true">♡</span><div><h3>輕聲、少觸碰</h3><p>以眼睛觀察、用筆記錄；清理時動作慢，先洗手再接觸器材。</p></div></article>
+      </div>
+    </section>
+
+    <section id="slides" class="section presentation-section" aria-labelledby="slides-title">
+      <div class="section-heading presentation-heading"><div><p class="eyebrow">完整活動簡報</p><h2 id="slides-title">邊看、邊做、邊提問</h2></div><p>簡報由 Google Drive 提供預覽。若下方沒有顯示，仍可用右上角按鈕下載檔案，或開啟原始簡報。</p></div>
+      <div class="viewer-panel"><iframe title="蝴蝶飼養觀察箱 DIY 活動簡報預覽" src="https://drive.google.com/file/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/preview" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div class="fallback" role="note"><span>簡報預覽需要 Google Drive 檔案具備可檢視權限。</span><a href="https://docs.google.com/presentation/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/edit?usp=drivesdk&amp;ouid=105063083445636359262&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">開啟原始簡報 ↗</a></div>
+    </section>
+
+    <section id="observe" class="section observation-section" aria-labelledby="observe-title">
+      <div class="observation-copy"><p class="eyebrow">親子觀察任務</p><h2 id="observe-title">今天看見了什麼？</h2><p>完成一項就勾起來。進度會保存在這台裝置，下次回來可以接著觀察。</p><div class="progress-summary" aria-live="polite"><strong id="progress-count">0 / 4</strong><span>項任務完成</span></div><div class="progress-track" aria-hidden="true"><span id="progress-bar"></span></div></div>
+      <div class="observation-list" role="group" aria-label="觀察任務清單">
+        <label class="observation-task"><input type="checkbox" data-task="shape"><span class="checkmark" aria-hidden="true"></span><span><strong>我畫下今天看到的外形</strong><small>幼蟲、蛹或成蝶？有哪些明顯特徵？</small></span></label>
+        <label class="observation-task"><input type="checkbox" data-task="plant"><span class="checkmark" aria-hidden="true"></span><span><strong>我找到牠正在吃的植物</strong><small>葉片有沒有被啃食的痕跡？</small></span></label>
+        <label class="observation-task"><input type="checkbox" data-task="change"><span class="checkmark" aria-hidden="true"></span><span><strong>我記錄一個變化</strong><small>顏色、大小、位置或行為有改變嗎？</small></span></label>
+        <label class="observation-task"><input type="checkbox" data-task="care"><span class="checkmark" aria-hidden="true"></span><span><strong>我確認觀察箱安全舒適</strong><small>通風、陰涼、乾淨，而且沒有被頻繁碰觸。</small></span></label>
+      </div>
+    </section>
+
+    <section class="closing-callout" aria-label="活動結語"><span class="closing-mark" aria-hidden="true">✦</span><p><strong>每一次羽化，都是一次溫柔的提醒：</strong><br>我們可以靠近自然，也要為自然留下離開的路。</p><a class="button button-light" href="#top">回到頁首 ↑</a></section>
   </main>
+
+  <footer class="footer"><span>蝴蝶飼養觀察箱 DIY</span><span>親子手作營・校園生物多樣性</span></footer>
+  <script src="js/app.js" defer></script>
 </body>
 </html>
