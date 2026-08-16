@@ -13,7 +13,7 @@
   <meta property="og:locale" content="zh_TW">
   <meta name="twitter:card" content="summary_large_image">
   <title>蝴蝶飼養觀察箱 DIY｜親子手作營</title>
-  <link rel="stylesheet" href="styles.css?v=20260816-deck2">
+  <link rel="stylesheet" href="styles.css?v=20260816-deck3">
 </head>
 <body>
   <header class="topbar">
@@ -96,19 +96,35 @@
     </section>
 
     <section id="slides" class="section presentation-section" aria-labelledby="slides-title">
-      <div class="section-heading presentation-heading"><div><p class="eyebrow">完整活動簡報</p><h2 id="slides-title">邊看、邊做、邊提問</h2></div><p>簡報以獨立投影片舞台呈現；可在頁面中閱讀，也可以開啟全螢幕播放模式。</p></div>
+      <div class="section-heading presentation-heading">
+        <div><p class="eyebrow">完整活動簡報</p><h2 id="slides-title">邊看、邊做、邊提問</h2></div>
+        <p>每張投影片直接成為網頁的一頁；像翻閱活動手冊一樣往下閱讀，也可以點擊任一頁進入播放模式。</p>
+      </div>
       <div class="presentation-note" role="note">
-        <strong>每張投影片獨立成頁，像翻閱一本活動手冊。</strong>
-        <span>若簡報沒有顯示，請確認 Google Drive 檔案具備可檢視權限，或使用下方原始簡報連結。</span>
+        <strong>20 張投影片，直接在網頁上播放。</strong>
+        <span>圖片與文字保留原簡報版面；使用鍵盤方向鍵、手機滑動或下方播放控制即可瀏覽。</span>
       </div>
       <div class="presentation-actions">
-        <p>建議使用電腦或平板觀看；手機也可以左右滑動簡報內的頁面。</p>
-        <button type="button" class="button button-primary" id="presentation-fullscreen" aria-controls="presentation-stage" aria-pressed="false">全螢幕播放 <span aria-hidden="true">⛶</span></button>
+        <p>建議使用電腦或平板觀看；點擊投影片可放大，按 F 可切換全螢幕。</p>
+        <button type="button" class="button button-primary" id="presentation-fullscreen" aria-controls="presentation-player" aria-pressed="false">全螢幕播放 <span aria-hidden="true">⛶</span></button>
       </div>
       <div class="presentation-stage" id="presentation-stage">
-        <iframe id="presentation-embed" title="蝴蝶飼養觀察箱 DIY 活動簡報預覽" src="https://drive.google.com/file/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/preview" loading="eager" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <div class="presentation-deck" id="presentation-deck" aria-label="蝴蝶飼養觀察箱 DIY 20 張投影片"></div>
       </div>
-      <div class="fallback" role="note"><span>簡報預覽需要 Google Drive 檔案具備可檢視權限。</span><a href="https://docs.google.com/presentation/d/1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j/edit?usp=drivesdk&amp;ouid=105063083445636359262&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">開啟原始簡報 ↗</a></div>
+      <div class="presentation-source" role="note"><span>內容來源：蝴蝶飼養觀察箱 DIY 活動簡報。</span><a href="https://drive.google.com/uc?export=download&amp;id=1TOnrDVsV550KKuGw68ZPwcJ24jXbGp5j" target="_blank" rel="noopener noreferrer">下載原始 PPTX ↗</a></div>
+      <dialog class="presentation-player" id="presentation-player" aria-labelledby="presentation-player-title">
+        <div class="player-shell">
+          <div class="player-toolbar">
+            <div><span class="player-kicker">蝴蝶飼養觀察箱 DIY</span><span class="player-count" id="presentation-player-count">01 / 20</span></div>
+            <button type="button" class="player-close" id="presentation-player-close" aria-label="關閉播放模式">關閉 ×</button>
+          </div>
+          <div class="player-canvas"><img id="presentation-player-image" src="assets/presentations/butterfly-box/slide-01.png" alt="第 1 張投影片" loading="eager"></div>
+          <div class="player-footer">
+            <div><h3 id="presentation-player-title">蝴蝶飼養觀察箱 DIY</h3><p id="presentation-player-caption">校園生物多樣性 × 親子手作 × 生命教育</p></div>
+            <div class="player-controls" aria-label="播放控制"><button type="button" id="presentation-player-prev" aria-label="上一張">←</button><button type="button" id="presentation-player-autoplay" aria-pressed="false">自動播放</button><button type="button" id="presentation-player-next" aria-label="下一張">→</button></div>
+          </div>
+        </div>
+      </dialog>
     </section>
 
     <section id="observe" class="section observation-section" aria-labelledby="observe-title">
@@ -125,6 +141,7 @@
   </main>
 
   <footer class="footer"><span>蝴蝶飼養觀察箱 DIY</span><span>親子手作營・校園生物多樣性</span></footer>
-  <script src="js/app.js?v=20260816-deck2" defer></script>
+  <script src="js/app.js?v=20260816-deck3" defer></script>
+  <script src="js/presentation.js?v=20260816-deck3" defer></script>
 </body>
 </html>
