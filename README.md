@@ -1,12 +1,12 @@
 # 蝴蝶飼養觀察箱 DIY
 
-蝴蝶飼養觀察箱 DIY 親子手作營的 GitHub Pages 活動導覽頁。首頁以「野外求生」安全手冊的深綠導覽、滿版自然照片、左側大標題與金色重點字為參考，並把 20 張原始簡報投影片轉成網站內建的逐頁舞台。
+蝴蝶飼養觀察箱 DIY 親子手作營的 GitHub Pages 活動導覽頁。首頁以「野外求生」安全手冊的深綠導覽、滿版自然照片、左側大標題與金色重點字為參考，並把兩份、共 38 張簡報投影片轉成網站內建的逐頁舞台。
 
 ## 網站內容
 
 - 活動導覽：認識對象、組裝箱體、每日記錄、尊重生命。
 - 照護提醒：通風陰涼、寄主植物與少觸碰的基本原則。
-- 簡報預覽：20 張投影片直接顯示在網頁中，不依賴 iframe 或 Google Drive 檢視器。
+- 簡報預覽：38 張投影片直接顯示在網頁中；第 21–38 張為《臺灣蝴蝶人工飼養與羽化成功指南》，不依賴 iframe 或 Google Drive 檢視器。
 - 簡報播放：每頁滿版閱讀，支援點擊放大、左右翻頁、自動播放、鍵盤方向鍵與全螢幕模式。
 - 親子觀察任務：四項勾選清單，使用 `localStorage` 保留本機進度。
 - 臉書分享套件：`share/facebook-post.html` 提供中英雙語文案與一鍵複製，並附 1200 × 630 分享縮圖。
@@ -32,7 +32,7 @@ python -m http.server 8000
 index.html       # 活動導覽與簡報預覽
 styles.css       # 視覺、RWD、動畫與列印樣式
 js/app.js        # 親子觀察任務與本機進度
-js/presentation.js # 20 張投影片渲染與播放控制
+js/presentation.js # 38 張投影片渲染與播放控制
 assets/presentations/butterfly-box/ # 網站內建投影片圖片
 assets/images/og-cover.png         # 社群分享縮圖
 share/facebook-post.html           # 中英雙語臉書文案複製頁
